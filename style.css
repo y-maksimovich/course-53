@@ -1,5 +1,10 @@
 body {
     padding-bottom: 1000px;
+    background-color: bisque;
+}
+
+h2 {
+    color: blue;
 }
 
 .fio {
