@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="fio">Каграманян</h1>
+    <h2 class="fio">Юрий</h2>
+    <h3 class="fio">Максимович</h3>
+    <a href="https://t.me/maksimovich">Мой телеграм</a>
+    <img id="myPhoto" src="./photo.jpeg" alt="Юрий Максимович в лучшие годы">
+
+    <h2>Мои навыки:</h2>
+    <ul>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>CSS</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JavaScript</li>
+        <li>JavaScript</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Языки, которыми я владею:</h2>
+    <ol>
+        <li>русский</li>
+        <li>русский</li>
+        <li>русский</li>
+        <li>русский</li>
+        <li>узбекский</li>
+        <li>узбекский</li>
+        <li>узбекский</li>
+        <li>узбекский</li>
+        <li>узбекский</li>
+        <li>английский</li>
+        <li>английский</li>
+        <li>английский</li>
+        <li>английский</li>
+        <li>английский</li>
+    </ol>
+
+    <h1>TEHNIKUM</h1>
+
+    <h2>Формы</h2>
+    <h3>Элементы формы</h3>
+    <form action="#" class="myFirstForm">
+        <label>
+            Имя:
+            <input type="text" name="username" value="Юрий">
+        </label>
+        <label>
+            Возраст:
+            <input type="number" name="age" placeholder="Кол-во полных лет">
+        </label>
+        <label>
+            Секретное слово:
+            <input type="password" name="secret">
+        </label>
+
+        Пол:
+        <label>
+            <input type="radio" name="gender" value="male"> М
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Ж
+        </label>
+        <label>
+            <input type="checkbox" required value=""> Я согласен с тем, что Юрий Максимович лучший преподаватель
+        </label>
+        <input type="reset" value="Очистить">
+        <input type="submit" value="Готово">
+    </form>
+
+    <h3>Калькулятор</h3>
+    <div class="calc">
+        <label>
+            a = 
+            <input type="number" name="x" value="10">
+        </label>
+        <label>
+            b = 
+            <input type="number" name="y" value="20">
+        </label>
+        <button onclick="calcSum()">+</button>
+        <button onclick="calcDiv()">/</button>
+        <div id="calcResult">Результат: </div>
+    </div>
+
+    <h2>Динамическая форма</h2>
+    <div class="dynamicForm">
+        <label>
+            Страна:
+            <select name="country" oninput="codeDetector()">
+                <option value="none">Выберите страну</option>
+                <option value="uz">Узбекистан</option>
+                <option value="ru">Россия</option>
+                <option value="usa">США</option>
+            </select>
+        </label>
+        <label>
+            Телефон:
+            <input type="tel" name="phone">
+        </label>
+        <label>
+            <input type="checkbox" id="confirm" onchange="activateButton()">
+            Подтвердить обработку данных
+        </label>
+        <button disabled>Отправить</button>
+    </div>
+    
+    <h2>Калькулятор стоимости обучения</h2>
+    <div class="courseForm">
+        <label>
+            Вид курса:
+            <select name="course" id="courseSelect" oninput="courseCalculator()">
+                <option value="none">Выберите курс</option>
+                <option value="python">Python</option>
+                <option value="frontend">Frontend</option>
+                <option value="da">Data аналитик</option>
+            </select>
+        </label>
+        <label>
+            Скидка:
+            <input type="range" name="discountRange" oninput="courseCalculator()" min="0" max="50" value="0" step="5">
+            <span id="discountValue">0%</span>
+        </label>
+        <label>
+            Сумма:
+            <input type="number" id="courseSum" readonly>
+        </label>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

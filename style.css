@@ -1,0 +1,81 @@
+body {
+    padding-bottom: 1000px;
+}
+
+.fio {
+    color: red;
+    display: inline;
+}
+
+#myPhoto {
+    width: 300px;
+    display: block;
+    border: 5px solid blue;
+    padding: 20px;
+    /* margin: 20px; */
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 50px; */
+    padding: 20px 30px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.myFirstForm label {
+    display: block;
+}
+
+.calc label {
+    display: block;
+}
+
+li:first-child {
+    color: blue;
+}
+
+li:nth-child(7) {
+    color: red;
+}
+
+li:last-child {
+    color: green;
+}
+
+li:hover {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+li {
+    transition: 500ms;
+}
+
+li::after {
+    content: ";";
+}
+
+li:last-child::after {
+    content: ".";
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./heart.png');
+    background-size: contain;
+}
+
+.dynamicForm label {
+    display: block;
+}
+
+.courseForm label {
+    display: block;
+}
