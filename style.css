@@ -84,3 +84,30 @@ ul li::before {
 .courseForm label {
     display: block;
 }
+
+@media (max-width: 700px) {
+    body {
+        background-color: aqua;
+    }
+
+    .fio {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    #myPhoto {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #tgLink {
+        display: none;
+    }
+}
+
+@media ((min-width: 701px) and (max-width: 900px)) {
+    .fio {
+        font-size: 30px;
+    }   
+}
