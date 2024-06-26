@@ -1,6 +1,7 @@
 body {
     padding-bottom: 1000px;
     background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -83,6 +84,41 @@ ul li::before {
 
 .courseForm label {
     display: block;
+}
+
+.blocksWrapper {
+    border: 5px solid yellow;
+}
+
+.block {
+    border: 5px solid red;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+    width: 120px;
+    height: 120px;
+}
+
+.flexWrapper {
+    border: 5px solid yellow;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.flexElem {
+    border: 5px solid red;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+    width: 120px;
+    height: 120px;
+
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 @media (max-width: 700px) {

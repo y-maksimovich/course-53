@@ -1,0 +1,373 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'TT hoves';
+  color: #222222;
+  /* outline: 2px solid red; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(6.5vw + 35.7px);
+}
+
+body {
+  background-image: url(../Images/html_css_js.png);
+  background-repeat: no-repeat;
+  background-position: top calc(2.8vw + 66px) right calc(3.5vw + 7px);
+  background-size: calc(23.8vw + 89.5px);
+}
+
+section {
+  padding:0  calc(10.6vw - 15.8px);
+}
+
+
+
+.logo {
+  max-width: calc(8.8vw + 181.8px);
+  margin-top: calc(0.33vw + 41px);
+  margin-bottom: calc(6.3vw + 4.4px);
+}
+
+.courseStart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: calc(14.5vw - 24px);
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29.4px;
+}
+
+h1 {
+  font-family: 'Chava';
+  font-size: 80px;
+  margin-top: 78px;
+}
+
+.subtitle {
+  font-weight: 700;
+}
+
+p {
+  max-width: 930px;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 37.8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}   
+
+.primary {
+  background: #6E3ABA;
+  border-radius: 12px;
+  border: none;
+  width: 328px;
+  padding: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #fff;
+  border:1px solid #6E3ABA;
+  border-radius: 12px;
+  width: 328px;
+  margin-left: 30px;
+  padding: 20px 0;
+  color: #6E3ABA;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Students */
+
+.studentsInfo {
+  margin-top: 160px;
+  margin-left: 121px;
+  margin-top: 37px;
+}
+
+.students {
+}
+
+.students span {
+}
+
+.students p {
+}
+
+/* Timer */
+
+.purple {
+  background: #6E3ABA;
+  text-align: center;
+  margin-top: 122px;
+  margin-left: 0;
+}
+
+.contentBlock.purple {
+  padding-top: calc(4.4vw + 23.4px);
+  padding-bottom: calc(5.2vw + 21.5px);
+  margin-bottom: calc(11vw + 18.5px);
+}
+
+h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: calc(2vw + 26px);
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 80px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: calc(4vw + 4px);
+  margin-bottom: calc(4vw + 4px);
+}
+
+.timerBlock {
+  color: #2F1D4E;
+}
+
+.timerBlock .value {
+  font-family: 'Chava';
+  font-size: calc(12.6vw + 19px);
+  line-height: 107.5%;
+}
+
+.timerBlock .desc {
+  font-size: 27px;
+  line-height: 118%;
+  text-transform: uppercase;
+}
+
+.purple .secondary {
+  margin: 0px auto 88px;
+}
+
+
+/* Programm */
+
+.courseProgram {
+  border: 2px solid black;
+  padding: 80px 64px 35px;
+  margin-right: 95px;
+  position: relative;
+}
+
+#corner {
+  width: 50px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+h2 {
+  margin-bottom: calc(2.2vw + 11.7px);
+  font-size: calc(2.7vw + 24px);
+  font-weight: 500;
+  line-height: 117%;
+  text-transform: uppercase;
+}
+
+.lessons {
+  list-style-type: none;
+  margin: 40px 0 34px;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.lessons li {
+  border-bottom: 1px solid #A1A1A1;
+  padding-bottom: 24px;
+  margin-top: 24px;
+}
+
+.desktop {
+  display: block;
+  margin: 0 auto;
+}
+
+.phone {
+  display: none;
+  margin: 30px auto 0;
+}
+/* Legend Start */
+.legend_wrapper h2{
+  margin-bottom: calc(5.5vw + 19.2px); /*90-40 */
+}
+.legend{
+  display: flex;
+  gap: 50px;
+
+}
+.legend_img{
+  flex-basis: 399px;
+  flex-shrink: 1;
+}
+.legend_info{
+  flex-grow: 100;
+  flex-basis: 566px;
+}
+.teacher_info h4{
+  font-size: calc(1.1vw + 34px);
+  line-height: 121%;
+  margin-bottom: calc(1.1vw + 5.8px);
+}
+.teacher_info p{
+  font-size: calc(1vw + 14.2px);
+  margin-bottom: calc(5.5vw + 19.2px);
+}
+.legend_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "smile Champion"
+                       "case  keyboard";
+  gap: calc(1.1vw + 26px) calc(8.8vw - 23px);
+}
+.card img{
+  display: block;
+}
+.card span{
+  display: block;
+  font-size: calc(0.6vw + 14px);
+  width: calc(10.4vw + 117.5px);
+}
+.card:first-child{
+ grid-area: smile;
+}
+.card:nth-of-type(2){
+  grid-area: Champion;
+}
+.card:nth-of-type(3){
+  grid-area: case;
+}
+.card:nth-of-type(4){
+  grid-area: keyboard;
+}
+/* Legend End */
+/* job_salary start */
+.job_salary h2{
+  max-width:  729px;
+}
+.job_salary p{
+  font-size: calc(1vw + 14.2px);
+  width: calc(60.6vw + 101px);
+  margin-bottom: calc(1.8vw +13.3px);
+}
+.job_salary img{
+  width: calc(82.3vw + 14.2px);
+}
+.job_salary span{
+  font-weight: bold;
+} 
+.feedback_card{
+  background-color: rgba(240, 247, 253, 1);
+  border-radius: 12px;
+  padding: 56px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feedback_text{
+  margin-bottom: 10px;
+}
+.youtube{
+  margin-bottom: 12px;
+} 
+.feedback_card p{
+  margin: 0;
+}
+.user_info{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.user_info h5{
+  max-width: 169px;
+  font-size: 21px;
+  font-weight: 400;
+}
+.user_img img{
+  border-radius: 50%;
+}
+/* job_salary end */
+
+
+/* Footer start */
+footer{
+  padding: calc(4.4vw + 23.3px)  calc(10.6vw - 15.8px);
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.footer_rigth{
+  width: 50%;
+}
+.footer_left{
+  width: 50%;
+}
+.footer_rigth_wrapper{
+ background-color: #fff;
+ width: calc(16.4vw + 265px);
+ padding: 60px calc(4.4vw + 11.3px);
+ border-radius: 12px;
+ position: relative;
+}
+.sale{
+  width: calc(6.1vw + 82.1px);
+  height:  calc(6.1vw + 82.1px);
+  color: #fff;
+  background-color: #6E3ABA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(2.5vw + 30.4px);
+  border-radius: 50%;
+  position: absolute;
+  top: -80px;
+  right:  -80px;
+}
+/* Footer end */
+
+
+
+@media (max-width:1099px) {
+  .legend{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
+  .legend_cards{
+    grid-template-areas: "smile keyboard"
+                         "Champion case"
+  }
+}

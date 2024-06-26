@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222222;
+}
+
+body {
+   font-family: 'TT Hoves';
+}
+
+section{
+    padding: 0 calc(10.7vw - 16px);
+}
+
+.logo{
+    margin-top: 37px;
+    margin-bottom: 85px;
+}
+
+.info{
+    display: flex;
+    gap: 161px;
+    margin-bottom: 76px;
+}
+
+.title,.subtitle{
+    display: block;
+    font-size: 21px;
+}
+
+.subtitle{
+    font-weight: 700;
+}
+
+h1{
+    font-family: 'Chava';
+    font-size: calc(4.2vw + 26px);
+    margin-bottom: 40px;
+}
+
+.info_text{
+    font-weight: 300;
+    font-size: 27px;
+    max-width: 930px;
+    margin-bottom: 20px;
+}
+
+.primary,.secondary{
+    width: 328px;
+    border-radius: 12px;
+    padding: 20px 0;
+    border: 1px solid #6E3ABA;
+    cursor: pointer;
+}
+
+.primary{
+    background-color: #6E3ABA;
+    color: white;
+    margin-right: 30px;
+}
+
+.secondary{
+    color: #6E3ABA;
+    background-color: white;
+}
+
+.info_wrapper{
+    background-image: url(../image/html_css_js.png);
+    background-position: right 58px top 121px;
+    background-repeat: no-repeat;
+    background-size: 30vw ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.courseProgram {
+    border: 2px solid black;
+    padding: 80px 64px 35px;
+    position: relative;
+}
+
+#corner {
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+h2 {
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+
+.lessons {
+    list-style-type: none;
+    margin: 40px 0  34px;
+    font-size: 21px;
+    line-height: 140%;
+}
+
+.lessons li {
+    border-bottom: 1px solid #A1A1A1;
+    padding-bottom: 24px;
+    margin-top: 24px;
+}
+
+.desktop {
+    display: block;
+    margin: 0 auto;
+}
+    
+.phone {
+    display: none;
+    margin: 30px auto 0;
+}
+
+@media (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+}
