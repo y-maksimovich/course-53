@@ -4,18 +4,36 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.rounded{
-    background-color: rgba(230,230,230, 0.5);
+
+body {
+    --text-color: black;
+    --color1: rgba(230,230,230, 0.5);
+    --color2: rgba(200,200,200, 0.8);
+
+    color: var(--text-color);
+    transition: 200ms;
+}
+
+body.dark {
+    --text-color: white;
+    --color1: rgba(130,130,130, 0.5);
+    --color2: rgba(100,100,100, 0.8);
+}
+
+.rounded {
+    background-color: var(--color1);
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 .darkBg{
-    background-color: rgba(200,200,200, 0.8);
+    background-color: var(--color2);
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 5px;
 }
+
 body{
     background-image: url(../img/background.jpg);
     padding: 20px;
@@ -44,10 +62,18 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 #changeBtn{
     width: 50px;
     cursor: pointer;
+    transition: 200ms;
 }
+
+#changeBtn.active {
+    transform:rotate('180deg');
+    filter: invert(1);
+}
+
 nav.darkBg{
     padding: 5px 10px;
 }
@@ -58,6 +84,7 @@ nav.darkBg button{
     background-color: transparent;
     cursor: pointer;
     font-size: 20px;
+    color: var(--text-color);
 }
 nav.darkBg button.active{
     background-color: orange;
