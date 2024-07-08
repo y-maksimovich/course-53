@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="fio">Каграманян</h1>
-    <h2 class="fio">Юрий</h2>
-    <h3 class="fio">Максимович</h3>
-    <a href="https://t.me/maksimovich" id="tgLink">Мой телеграм</a>
-    <img id="myPhoto" src="./photo.jpeg" alt="Юрий Максимович в лучшие годы">
+
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <div class="menu__box">
+            <h1 class="fio">Каграманян</h1>
+            <h2 class="fio">Юрий</h2>
+            <h3 class="fio">Максимович</h3>
+            <a href="https://t.me/maksimovich" id="tgLink">Мой телеграм</a>
+            <img id="myPhoto" src="./photo.jpeg" alt="Юрий Максимович в лучшие годы">
+        
+        </div>
+    </div>
+
 
     <h2>Мои навыки:</h2>
     <ul>
@@ -135,10 +148,48 @@
         <div class="flexElem">3</div>
     </div>
 
+    <h2>Переключатель</h2>
 
+    <div class="plans">
+        <div class="plan" onclick="activatePlan()">Ежемес</div>
+        <div class="plan" onclick="activatePlan()">3 мес</div>
+        <div class="plan" onclick="activatePlan()">6 мес</div>
+        <div class="plan active" onclick="activatePlan()">Годовой</div>
+    </div>
 
+    <h2>Калькулятор на switch</h2>
+    <div class="calc">
+        <label>
+            a = 
+            <input type="number" name="num1" value="10">
+        </label>
+        <label>
+            b = 
+            <input type="number" name="num2" value="20">
+        </label>
+        <button onclick="calculate()">+</button>
+        <button onclick="calculate()">-</button>
+        <button onclick="calculate()">*</button>
+        <button onclick="calculate()">/</button>
+        <button onclick="calculate()">^</button>
+        <div id="calculation">Результат: </div>
+    </div>
 
-
+    <h2>Добавить студента в список</h2>
+    <input type="text" name="studentName">
+    <button onclick="addStudent()">Добавить в список</button>
+    
+    <h2>Удалить студента из группы</h2>
+    <input type="text" name="studentName">
+    <button onclick="removeStudent()">Удалить из списка</button>
+    
+    <h2>Заменить студента в группе</h2>
+    <input type="text" name="oldName"> ->
+    <input type="text" name="newName">
+    <button onclick="changeStudent()">Заменить</button>
+    
+    <h2>Список группы</h2>
+    <ol id="studentsList"></ol>
 
 
 

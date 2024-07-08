@@ -9,7 +9,7 @@
 // alert(`Hello, ${username}!`)
 
 
-console.log(username + surname)
+// console.log(username + surname)
 
 
 
@@ -157,3 +157,106 @@ function activateButton() {
         btn.disabled = true
     }
 }
+
+
+
+function activatePlan() {
+    let disableBtn = document.querySelector('.plan.active')
+    disableBtn.classList.remove('active')
+
+    let activeBtn = event.target
+    activeBtn.classList.add('active')
+}
+
+
+function calculate() {
+    let a = +document.getElementsByName("num1")[0].value
+    let b = +document.getElementsByName("num2")[0].value
+
+    let btn = event.target
+    let param = btn.innerHTML
+    let c 
+
+    // if(param == "+") {
+    //     c = a + b
+    // } else if(param == "-") {
+    //     c = a - b
+    // } else if(param == "*") {
+    //     c = a * b
+    // } else if(param == "^") {
+    //     c = a ** b
+    // } else if(param == "/") {
+    //     c = a / b
+    // }
+    
+    switch (param) {
+        case "+":
+            c = a + b
+            break;
+        case "-":
+            c = a - b
+            break;
+        case "*":
+            c = a * b
+            break;
+        case "^":
+            c = a ** b
+            break;
+        case "/":
+            c = a / b
+            break;
+    
+        default:
+            c = "Я не умею такое считать"
+            break;
+    }
+
+    let res = document.getElementById('calculation')
+    res.innerHTML = `Результат: ${c}`
+}
+
+
+let students = ["Асилбек", "Асадбек", "Амир"]
+students.push("Альберт")
+students.push("Азамат")
+students.push("Максим")
+showList()
+
+function addStudent() {
+    let studentName = document.getElementsByName('studentName')[0].value
+    students.push(studentName)
+    showList()
+}
+
+function removeStudent() {
+    let studentName = document.getElementsByName('studentName')[1].value
+    let ind = students.findIndex((elem) => elem == studentName)
+    if(ind != -1) {
+        // Студент найден
+        students.splice(ind, 1)
+    }
+    showList()
+}
+
+function changeStudent() {
+    let oldName = document.getElementsByName('oldName')[0].value
+    let ind = students.findIndex((elem) => elem == oldName)
+    if(ind != -1) {
+        // Студент найден
+        let newName = document.getElementsByName('newName')[0].value
+        students[ind] = newName
+    }
+    showList()
+}
+
+
+function showList() {
+    let ul = document.querySelector("#studentsList")
+    ul.innerHTML = ""
+    for(let i = 0; i < students.length; i++) {
+        let line = `<li>${students[i]}</li>`
+        ul.innerHTML = ul.innerHTML + line
+    }
+}
+
+
